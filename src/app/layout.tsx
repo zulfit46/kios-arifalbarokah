@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   title: "ARIF AL BAROKA — Info Penjualan Pupuk Bersubsidi",
   description:
     "Sistem informasi penjualan pupuk bersubsidi Kios Pengecer ARIF AL BAROKA. Data petani, kuota pupuk, dan rekapitulasi musim tanam.",
+   icons: {
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   keywords: [
     "pupuk bersubsidi",
     "ARIF AL BAROKA",
