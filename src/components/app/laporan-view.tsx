@@ -230,7 +230,7 @@ function renderAlokasiSection(
     totalPetaniDesa += r.petaniCount;
     return [
       { content: String(i + 1), styles: { halign: "center", fontSize: 7 } },
-      { content: `${r.namaPoktan} (${r.petaniCount} petani)`, styles: { halign: "left", fontStyle: "bold", fontSize: 7 } },
+      { content: r.namaPoktan, styles: { halign: "left", fontStyle: "bold", fontSize: 7 } },
       { content: r.kodeDesa, styles: { halign: "center", fontSize: 7 } },
       { content: r.subsektor, styles: { halign: "left", fontSize: 7 } },
       { content: r.komoditasMT1 || "-", styles: { halign: "left", fontSize: 7 } },
@@ -565,7 +565,7 @@ function renderRealisasiSection(
     const numF = (v: number) => (v !== 0 ? formatNumber(Math.round(v)) : "-");
     return [
       { content: String(i + 1), styles: { halign: "center", fontSize: 7 } },
-      { content: `${r.namaPoktan} (${r.petaniCount} petani)`, styles: { halign: "left", fontStyle: "bold", fontSize: 7 } },
+      { content: r.namaPoktan, styles: { halign: "left", fontStyle: "bold", fontSize: 7 } },
       { content: r.kodeDesa, styles: { halign: "center", fontSize: 7 } },
       { content: r.subsektor, styles: { halign: "left", fontSize: 7 } },
       { content: numF(r.kuotaUrea), styles: { halign: "right", fontSize: 7, textColor: [2, 132, 199] } },
